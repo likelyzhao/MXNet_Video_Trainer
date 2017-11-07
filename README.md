@@ -17,5 +17,7 @@ simple training system for video training
 4. 需要开发一个读取特定队列的mxnet dataloader
 5. 联机调试进行训练
 
-
+## 多线程队列测试通过
+调用 `python train.py` 查看测试效果
+`config.py` 中 `config.RUNTIMECONFIG.num_provider_thread = 10` 可以设置 `providier` 的线程数目
 
